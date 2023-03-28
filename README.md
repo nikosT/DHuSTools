@@ -37,6 +37,11 @@ Accept footprint, iterate over past months and see what capacity it would take t
 
 Accepts a product ID and uses that to obtain necessary metadata for that product from a given DHuS server, generate an appropriate STAC metadata structure, adjust `HREF` references within the structure to match the components of the original product in the DHuS server, and finally inserts the resulting STAC item into a STAC catalogue. `register-stac.sh` has a built-in filter, which determines the target STAC collection based on the title of the product. This can be customized in code.
 
+## delete-stac.py
+A Python based script that works as a placeholder in order to delete id from STAC
+Run `pip install -r requirements.txt` to setup the environment. You can isolate the environment with e.g. conda
+Currently the `id` is hardcoded as an example.
+
 # Gist
 
 The `gist` folder contains short snippets of code, that illustrate some frequently performed actions. They are intended as examples, often can be pasted into your console, but there is no attribute handling, checks, cleanup, et cetera.
